@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Article</title>
+</head>
+
+<body>
+  <!-- header banniere  -->
+  <header>
+    <img src="image/banniere1.jpg" width="100%" height="auto">
+  </header>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-link text-navbeer" href="#">Acceuil</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link text-navbeer" href="#">RoadBook</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-navbeer" href="#">Articles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-navbeer" href="#">Services</a>
+        </li>
+      </ul>
+      <!-- searchbar pour rechercher par id un article -->
+      <form class="form-inline my-2 my-lg-0">
+        <input id="inputsearch" class="form-control mr-sm-2" type="search" placeholder="Rechercher un article par id"
+          aria-label="Search">
+        <button type="button" class="btn btn-secondary" id="searchbutton">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+  <h1>Les Articles</h1>
+  <!-- affichage du string via l'api -->
+  <div id="sous-titre">
+  </div>
+  <!-- en tete du tableau contenant la liste des articles -->
+  <div class="container">
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item col-3">Titre</li>
+      <li class="list-group-item col-3">Description</li>
+    </ul>
+    
+  
+    <div id="liste">
+      <!-- liste des article afficher via l'api -->    
+    </div>
+    
+    <!-- card a remplir avec le contenu des article via l'api en js -->
+    <!-- card a mettre sur la droite -->
+
+    <div class="card" id="card">
+      <div class="card-header" id="auteur">Auteur de l'article</div>
+      <div class="card-body">
+        <h5 class="card-title" id="titre">Titre de l'article</h5>
+        <p class="card-text" id="content">Içi le contenu de l'article</p>
+        <footer class="blockquote-footer">Contributeur <cite title="Source Title" id="contributeur"></cite></footer>
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label class="sr-only">Contributeur</label>
+            <input type="text" class="form-control" id="inputcontributeur" placeholder="Contributeur">
+          </div>
+          <button type="button" class="btn btn-primary mb-2" id="btnaddcontrib">Ajouter un contributeur</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <!-- ajouter un article  -->
+  <div class="container">
+
+  <div id="ajouterArticle">
+    <div class="card">
+      <h5 class="card-header">Ajouter un article</h4>
+        <div class="card-body">
+          <form id="formulaire">
+            <div class="form-group">
+              <label for="formGrouptitre">Titre</label>
+              <input type="text" class="form-control" id="formGrouptitre" placeholder="Inscrivez votre titre">
+
+              <label for="formGroupauteur">Auteur</label>
+              <input type="text" class="form-control" id="formGroupauteur" placeholder="Indiquez l'auteur">
+
+              <label for="formGroupdescription">Description rapide</label>
+              <input type="text" class="form-control" id="formGroupdescription"
+                placeholder="Entrez une description rapide de votre article">
+
+
+              <label for="formGroupcontenu">Contenu</label>
+              <input type="text" class="form-control" id="formGroupcontenu"
+                placeholder="Entrez le contenu de votre article içi">
+
+              <label for="formGroupcontributeur">Contributeur</label>
+              <input type="text" class="form-control" id="formGroupcontributeur"
+                placeholder="Entrez les contributeur de votre article">
+            </div>
+            <button type="button" class="btn btn-primary" id="submit">Submit</button>
+
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- script jquery popper bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- javascript -->
+  <script src="main.js"></script>
+</body>
+
+</html>

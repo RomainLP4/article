@@ -1,0 +1,41 @@
+Description non technique du projet 
+
+Cette page web va nous permettre de voir les articles du site, les consultés, faire une recherche par id de ces derniers
+ajouter un contributeur a un article et aussi de créer et ajouter un article 
+
+
+Endpoints
+
+Master controller
+/article
+permet d'acceder a tout les endpoint lié au articles
+il sera donc requis avant d'acceder aux autres
+
+/welcome
+affiche le message d'acceuil
+
+/byid/{id} 
+Prend un Integer en parametre qui correspond a l'id de l'article rechercher
+
+/articlelist
+affiche la totalité des article sur la page
+
+/ajouterarticle
+permet d'ajouter un article a l'application
+
+
+
+
+
+responsive
+annotation
+framework
+api rest
+serialiser
+json
+http
+get/put/post (des bonnes pratiques)
+endpoint
+ajax (wikipedia)
+cors
+cdn
