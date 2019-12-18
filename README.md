@@ -19,4 +19,4 @@ Cette appli va nous permettre de voir les articles référencé, les consultés,
 L'utilisateur peut aussi ajouter un contributeur à un article ainsi que de  créer et ajouter un article.
 
 ___
-<img src=image/Diagramme.png>
+![Overview](image/Diagramme.png)
