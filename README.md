@@ -75,7 +75,7 @@ ___
 ![Ecran_d'acceuil](https://github.com/RomainLP4/article/blob/master/src/main/resources/static/image/screen1.png)
 
 ## Ajouter un article
-![Ajouter_un_article](https://github.com/RomainLP4/article/blob/master/src/main/resources/static/image/screen1.png)
+![Ajouter_un_article](https://github.com/RomainLP4/article/blob/master/src/main/resources/static/image/screenAjoutArticle.png)
 
 
 
