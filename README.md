@@ -15,7 +15,7 @@ ___
 
 # Description non technique du projet 
 
-Cette appli va nous permettre de voir les articles référencé, les consultés, et faire une recherche par **id** de ces derniers.
+Cette appli va nous permettre de voir les articles référencés, les consulter, et faire une recherche par **id** de ces derniers.
 L'utilisateur peut aussi ajouter un contributeur à un article ainsi que de  créer et ajouter un article.
 
 ____

@@ -80,7 +80,7 @@ btncontrib.addEventListener("click", function (event) {
 function ajouterArticle() {
     let add = document.getElementById("submit");
     add.addEventListener("click", function (event) {
-        alert("youpi")
+        
         $.post("http://localhost:8080/article/ajouterarticle", {
             auteurart: document.getElementById("formGroupauteur").value,
             titreart: document.getElementById("formGrouptitre").value,
